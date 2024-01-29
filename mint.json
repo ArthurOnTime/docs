@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "dark": "/logo/Swagpool logo - black.svg",
-    "light": "/logo/Swagpool logo - white.svg"
+    "dark": "/logo/Swagpool logo - white.svg",
+    "light": "/logo/Swagpool logo - black.svg"
   },
   "favicon": "/swagpool-favicon.svg",
   "colors": {
