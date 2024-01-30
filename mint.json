@@ -38,7 +38,7 @@
       "url": "https://discord.com/api/oauth2/authorize?client_id=1197923779213533285&permissions=8&scope=bot"
     },
     {
-      "name": "Discord community",
+      "name": "Discord",
       "icon": "people-group",
       "url": "https://discord.gg/Kp6h6Rh3x9"
     },
@@ -55,7 +55,7 @@
   ],
   "navigation": [
     {
-      "group": "About",
+      "group": "Swagpool DAO",
       "pages": [
         "manifesto"
       ]
@@ -71,6 +71,11 @@
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction"
+      ]
+    },
+    {
+      "group": "Endpoints",
+      "pages": [
       ]
     }
   ],
