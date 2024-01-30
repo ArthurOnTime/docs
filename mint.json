@@ -33,13 +33,13 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Add bot",
+      "icon": "discord",
+      "url": "https://discord.com/api/oauth2/authorize?client_id=1197923779213533285&permissions=8&scope=bot"
     },
     {
-      "name": "Community",
-      "icon": "slack",
+      "name": "Discord community",
+      "icon": "people-group",
       "url": "https://mintlify.com/community"
     },
     {
