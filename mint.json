@@ -75,9 +75,9 @@
     }
   ],
   "feedback": {
-    "thumbsRating": "true",
-    "suggestEdit": "true",
-    "raiseIssue": "true"
+    "thumbsRating": true,
+    "suggestEdit": true,
+    "raiseIssue": true
   },
   "footerSocials": {
     "twitter": "https://twitter.com/swagpoolHQ",
