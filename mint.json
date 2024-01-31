@@ -74,6 +74,11 @@
       ]
     }
   ],
+  "feedback": {
+    "thumbsRating": "true",
+    "suggestEdit": "true",
+    "raiseIssue": "true"
+  },
   "footerSocials": {
     "twitter": "https://twitter.com/swagpoolHQ",
     "github": "https://github.com/SwagpoolHQ/contribution-tracker",
