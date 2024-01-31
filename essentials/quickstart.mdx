@@ -12,6 +12,58 @@ icon: 'bolt'
 
 ## Quick install bot
 
+<Card
+  title="Install Discord bot"
+  icon="discord"
+  href="https://discord.com/api/oauth2/authorize?client_id=1197923779213533285&permissions=8&scope=bot"
+>
+  Click to open Discord installation
+</Card>
+
+## Self host bot
+
+<Steps>
+  <Step title="Clone repo">
+    The Github repo is [here](https://github.com/SwagpoolHQ/contribution-tracker)
+  </Step>
+  <Step title="Setup .env">
+    Add a `.env` file at the root folder
+  </Step>
+  <Step title="Setup your MongoDB credentials">
+    <Info>
+      You can create an hosted MongoDB database for free following [this tutorial](https://www.mongodb.com/basics/mongodb-atlas-tutorial)             </Info>
+    In your newly created `.env` file, add the `MONGO_DB_CONNEXION` variable for your MongoDB connection string.
+    it should look like:
+    ```javascript .env
+    MONGO_DB_CONNEXION = "<replace by connexion string>"
+    ```
+  </Step>
+  <Step title="Setup your Discord app credentials">
+  <Info>
+    You can create a new Discord app from [this page](https://discord.com/developers/applications)
+  </Info>
+    In your newly created `.env` file, add the `DISCORD_CLIENT_ID`, `DISCORD_CLIENT_SECRET`, `DISCORD_BOT_SECRET` variables.
+    it should look like:
+    ```javascript .env
+    DISCORD_CLIENT_ID = "<replace by CLIENT ID>"
+    DISCORD_CLIENT_SECRET = "<replace by CLENT SECRET>"
+    DISCORD_BOT_SECRET = "<replace by TOKEN>"
+    ```
+  </Step>
+  <Step title="Configure your Discord app ">
+    In the [Discord developper portal](https://discord.com/developers/applications), select your application.  
+    Then activate : 
+    - PUBLIC BOT: Make your choice
+    - REQUIRES OAUTH2 CODE GRANT: Off
+    - PRESENCE INTENT: Off
+    - SERVER MEMBERS INTENT: On
+    - MESSAGE CONTENT INTENT= On
+  </Step>
+  <Step title="Start your bot">
+    Your ready to start your bot with the `yarn start` command from the root folder
+  </Step>
+</Steps>
+
 
 
 
