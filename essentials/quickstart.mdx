@@ -29,27 +29,24 @@ icon: 'bolt'
   <Step title="Setup .env">
     Add a `.env` file at the root folder
   </Step>
-
   <Step title="Setup your MongoDB credentials">
     <Info>You can create a free hosted MongoDB database with [this tutorial](https://www.mongodb.com/basics/mongodb-atlas-tutorial)</Info>
     In your newly created `.env` file, add the `MONGO_DB_CONNEXION` variable for your MongoDB connection string.  
     it should look like:
     ```javascript .env 
+      MONGO_DB_CONNEXION = "replace by connexionString"
+    ```
+  </Step>
+  <Step title="Setup your Discord app credentials">
+    <Info>You can create a new Discord app from [this page](https://discord.com/developers/applications)</Info>
+      In your newly created `.env` file, add the `DISCORD_CLIENT_ID`, `DISCORD_CLIENT_SECRET`, `DISCORD_BOT_SECRET` variables.
+      it should look like:
+    ```javascript .env 
       DISCORD_CLIENT_ID = "replace by CLIENT ID"
-      DISCORD_CLIENT_SECRET = "replace by CLENT SECRET"
+      DISCORD_CLIENT_SECRET = "replace by CLIENT SECRET"
       DISCORD_BOT_SECRET = "replace by TOKEN"
     ```
   </Step>
-  
-  
-  <Step title="Setup your Discord app credentials">
-    <Info>You can create a new Discord app from</Info>
-    [this page](https://discord.com/developers/applications)
-      In your newly created `.env` file, add the `DISCORD_CLIENT_ID`, `DISCORD_CLIENT_SECRET`, `DISCORD_BOT_SECRET` variables.
-      it should look like:
-      
-  </Step>
-
   <Step title="Configure your Discord app ">
     In the [Discord developper portal](https://discord.com/developers/applications), select your application.  
     Then activate : 
@@ -59,8 +56,6 @@ icon: 'bolt'
     - SERVER MEMBERS INTENT: On
     - MESSAGE CONTENT INTENT: On
   </Step>
-
-  
   <Step title="Start your bot">
     Your ready to start your bot with the `yarn start` command from the root folder
   </Step>
