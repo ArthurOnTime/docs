@@ -19,7 +19,7 @@
   "topbarLinks": [
     {
       "name": "Discord",
-      "url": "https://discord.gg/J7yFv4Qsjb"
+      "url": " https://discordlinks.me/nqYhv9NV"
     }
   ],
   "topbarCtaButton": {
@@ -41,7 +41,7 @@
     {
       "name": "Discord",
       "icon": "people-group",
-      "url": "https://discord.gg/J7yFv4Qsjb"
+      "url": " https://discordlinks.me/nqYhv9NV"
     },
     {
       "name": "Github",
@@ -83,6 +83,6 @@
   "footerSocials": {
     "twitter": "https://twitter.com/swagpoolHQ",
     "github": "https://github.com/SwagpoolHQ/contribution-tracker",
-    "discord": "https://discord.gg/J7yFv4Qsjb"
+    "discord": "https://discordlinks.me/nqYhv9NV"
   }
 }
