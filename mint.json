@@ -12,7 +12,7 @@
     "light": "#FFFFFF",
     "dark": "#2E2E2E",
     "anchors": {
-      "from": "#7A7A7A",
+      "from": "##FA7617",
       "to": "#7A7A7A"
     }
   },
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "group": "Manifesto",
+      "group": "Google Analytics bot",
       "pages": [
         "about-the-dao/manifesto"
       ]
