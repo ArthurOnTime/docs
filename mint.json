@@ -63,7 +63,8 @@
       "group": "Google Analytics bot",
       "pages": [
         "essentials/quickstart",
-        "essentials/permissions"
+        "essentials/permissions",
+        "essentials/self-hosting"
       ]
     },
     {
