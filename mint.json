@@ -30,6 +30,10 @@
     {
       "name": "API Reference",
       "url": "api-reference"
+    },
+    {
+      "name": "About the dao",
+      "url": "manifesto"
     }
   ],
   "anchors": [
@@ -56,13 +60,7 @@
   ],
   "navigation": [
     {
-      "group": "Swagpool DAO",
-      "pages": [
-        "manifesto"
-      ]
-    },
-    {
-      "group": "Contribution tracker bot",
+      "group": "Google Analytics bot",
       "pages": [
         "essentials/quickstart",
         "essentials/permissions"
