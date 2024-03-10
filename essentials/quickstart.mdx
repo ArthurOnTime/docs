@@ -14,6 +14,7 @@ icon: 'bolt'
 
 <Steps>
   <Step title="Authorize the bot">
+    Click on the card below to authorize Google Analytics bot on your Discord server.
 
     <Card
       title="Authorize Google Analytics bot"
@@ -25,29 +26,14 @@ icon: 'bolt'
 
   </Step>
   
-  <Step title="Setup your MongoDB credentials">
-    <Info>You can create a free hosted MongoDB database with [this tutorial](https://www.mongodb.com/basics/mongodb-atlas-tutorial)</Info>
-    In your newly created `.env` file, add the `MONGO_DB_CONNEXION` variable for your MongoDB connection string.  
-    it should look like:
+  <Step title="To Do">
+    <Info>info</Info>
+    Text `tag`
+    - item 1
+    - item 2
     
   </Step>
-  <Step title="Setup your Discord app credentials">
-    <Info>You can create a new Discord app from the [Discord developper portal](https://discord.com/developers/applications)</Info>
-      In your newly created `.env` file, add the `DISCORD_CLIENT_ID`, `DISCORD_CLIENT_SECRET`, `DISCORD_BOT_SECRET` variables.
-      it should look like:
-  </Step>
-  <Step title="Configure your Discord app ">
-    In the [Discord developper portal](https://discord.com/developers/applications), select your application.  
-    Then activate : 
-    - PUBLIC BOT: Make your choice
-    - REQUIRES OAUTH2 CODE GRANT: Off
-    - PRESENCE INTENT: Off
-    - SERVER MEMBERS INTENT: On
-    - MESSAGE CONTENT INTENT: On
-  </Step>
-  <Step title="Start your bot">
-    Your ready to start your bot with the `yarn start` command from the root folder
-  </Step>
+  
 </Steps>
 
 <CardGroup cols={2}>
