@@ -1,6 +1,6 @@
 ---
-title: 'Quickstart'
-description: 'Start using contribution tracker bot'
+title: 'Quick setup'
+description: 'Start using google analytics bot'
 icon: 'bolt'
 "twitter:image": "/images/cover-image.png"
 ---
@@ -10,42 +10,31 @@ icon: 'bolt'
   src="/images/cover-image.png"
 />
 
-## Quick install
-
-<Card
-  title="Install Discord bot"
-  icon="discord"
-  href="https://discord.com/api/oauth2/authorize?client_id=1197923779213533285&permissions=8&scope=bot"
->
-  Add Google Analytics on your Discord server (easy)
-</Card>
-
-## Self host the bot
+## Step by step guide
 
 <Steps>
-  <Step title="Clone repo">
-    The Github repo is [here](https://github.com/SwagpoolHQ/contribution-tracker)
+  <Step title="Authorize the bot">
+
+    <Card
+      title="Authorize Google Analytics bot"
+      icon="discord"
+      href="https://discord.com/api/oauth2/authorize?client_id=1197923779213533285&permissions=8&scope=bot"
+    >
+      Click here to authorize the bot on your Discord server.
+    </Card>
+
   </Step>
-  <Step title="Setup .env">
-    Add a `.env` file at the root folder
-  </Step>
+  
   <Step title="Setup your MongoDB credentials">
     <Info>You can create a free hosted MongoDB database with [this tutorial](https://www.mongodb.com/basics/mongodb-atlas-tutorial)</Info>
     In your newly created `.env` file, add the `MONGO_DB_CONNEXION` variable for your MongoDB connection string.  
     it should look like:
-    ```javascript .env 
-      MONGO_DB_CONNEXION = "replace by connexionString"
-    ```
+    
   </Step>
   <Step title="Setup your Discord app credentials">
     <Info>You can create a new Discord app from the [Discord developper portal](https://discord.com/developers/applications)</Info>
       In your newly created `.env` file, add the `DISCORD_CLIENT_ID`, `DISCORD_CLIENT_SECRET`, `DISCORD_BOT_SECRET` variables.
       it should look like:
-    ```javascript .env 
-      DISCORD_CLIENT_ID = "replace by CLIENT ID"
-      DISCORD_CLIENT_SECRET = "replace by CLIENT SECRET"
-      DISCORD_BOT_SECRET = "replace by TOKEN"
-    ```
   </Step>
   <Step title="Configure your Discord app ">
     In the [Discord developper portal](https://discord.com/developers/applications), select your application.  
