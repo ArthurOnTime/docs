@@ -1,0 +1,79 @@
+---
+title: 'Self hosting'
+description: 'Host the Google Analytics bot yourself'
+icon: 'screwdriver-wrench'
+"twitter:image": "/images/cover-image.png"
+---
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/images/cover-image.png"
+/>
+
+
+## Step by step guide
+
+<Steps>
+  <Step title="Clone repo">
+    The Github repo is [here](https://github.com/SwagpoolHQ/contribution-tracker)
+  </Step>
+  <Step title="Setup .env">
+    Add a `.env` file at the root folder
+  </Step>
+  <Step title="Setup your MongoDB credentials">
+    <Info>You can create a free hosted MongoDB database with [this tutorial](https://www.mongodb.com/basics/mongodb-atlas-tutorial)</Info>
+    In your newly created `.env` file, add the `MONGO_DB_CONNEXION` variable for your MongoDB connection string.  
+    it should look like:
+    ```javascript .env 
+      MONGO_DB_CONNEXION = "replace by connexionString"
+    ```
+  </Step>
+  <Step title="Setup your Discord app credentials">
+    <Info>You can create a new Discord app from the [Discord developper portal](https://discord.com/developers/applications)</Info>
+      In your newly created `.env` file, add the `DISCORD_CLIENT_ID`, `DISCORD_CLIENT_SECRET`, `DISCORD_BOT_SECRET` variables.
+      it should look like:
+    ```javascript .env 
+      DISCORD_CLIENT_ID = "replace by CLIENT ID"
+      DISCORD_CLIENT_SECRET = "replace by CLIENT SECRET"
+      DISCORD_BOT_SECRET = "replace by TOKEN"
+    ```
+  </Step>
+  <Step title="Configure your Discord app ">
+    In the [Discord developper portal](https://discord.com/developers/applications), select your application.  
+    Then activate : 
+    - PUBLIC BOT: Make your choice
+    - REQUIRES OAUTH2 CODE GRANT: Off
+    - PRESENCE INTENT: Off
+    - SERVER MEMBERS INTENT: On
+    - MESSAGE CONTENT INTENT: On
+  </Step>
+  <Step title="Start your bot">
+    Your ready to start your bot with the `yarn start` command from the root folder
+  </Step>
+</Steps>
+
+<CardGroup cols={2}>
+  <Card
+    title="Permissions"
+    icon="building-shield"
+    href="/essentials/permissions"
+  >
+    Learn about permissions required per features
+  </Card>
+  <Card
+    title="Install Discord bot"
+    icon="discord"
+    href="https://discord.com/api/oauth2/authorize?client_id=1197923779213533285&permissions=8&scope=bot"
+  >
+    Start using Contribution tracker bot now (easy)
+  </Card>
+</CardGroup>
+
+
+
+
+
+
+
+
+
