@@ -71,6 +71,12 @@
       "pages": [
         "api-reference/introduction"
       ]
+    },
+    {
+      "group": "Google Analytics bot",
+      "pages": [
+        "about-the-dao/manifesto"
+      ]
     }
   ],
   "feedback": {
