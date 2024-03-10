@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Swagpool documentation",
   "logo": {
-    "dark": "/logo/white-logo.svg",
-    "light": "/logo/black-logo.svg"
+    "dark": "/logo/Logo.png",
+    "light": "/logo/Logo.png"
   },
   "versions": ["v0"],
   "favicon": "/favicon.svg",
