@@ -13,7 +13,9 @@ icon: 'bolt'
 ## Step by step guide
 
 <Steps>
-  <Step title="Authorize the bot">
+  <Step 
+    title="Authorize the bot"
+  >
     Click on the card below to authorize Google Analytics bot on your Discord server.
 
     <Card
@@ -24,14 +26,133 @@ icon: 'bolt'
       Click here to authorize the bot on your Discord server.
     </Card>
 
+    Admin permission is required for now. As you complete the authorization flow, you should see the bot appear on your Discord server among the Members list at the right of the screen. You can search for it or click on the user-group icon.
+
+    <Info>
+      Google Analytics bot appearing on your server
+      <img
+        style={{ borderRadius: '0.5rem' }}
+        src="/images/bot-appearing.png"
+      />
+    </Info>
+
   </Step>
   
-  <Step title="To Do">
-    <Info>info</Info>
-    Text `tag`
-    - item 1
-    - item 2
+  <Step title="Go to settings">
+
+    Type `/settings`in the message writing input from any channel. You'll see 2 settings command for the Google Analytics bot.  
+
+    <img
+      style={{ borderRadius: '0.5rem' }}
+      src="/images/settings-command.png"
+    />
+
+    Select `/settings google analytics`
+
+    <Warning>
+      If you can't find the Google Analytics bot commands, refresh your all page.
+    </Warning>
     
+  </Step>
+
+  <Step title="Add your Google Analytics">
+
+    The command will prompt 2 parameters:`tag-id` and `api-secret`
+
+    <img
+      style={{ borderRadius: '0.5rem' }}
+      src="/images/ga-settings.png"
+    />
+
+    <Steps>
+      <Step 
+        title="get your measurement-id"
+        icon="google"
+      >
+
+        <Warning>
+          If you don't have Google Analytics already, create a new one, it's free.
+        </Warning>
+
+        Go to your [Google Analytics website](https://analytics.google.com) to copy your measurement-id.
+
+        <img
+          style={{ borderRadius: '0.5rem' }}
+          src="/images/data-stream-config-highlight.png"
+        />
+
+        Paste it in the `/settings google analytics` command
+
+        <img
+          style={{ borderRadius: '0.5rem' }}
+          src="/images/ga-settings-measurement-id.png"
+        />
+
+        **Can't find your measurment-id ?**  
+        Follow this step by step video to get this page
+
+        - Go to the Administration dashboard
+        - Look for the `Data stream` page. 
+        - Click on your `Data stream` to open the configuration page
+
+        <video
+          style={{ borderRadius: '0.5rem' }}
+          src="/images/ga-measurement-id.mp4"
+        />
+
+      </Step>
+      <Step 
+        title="get your api-secret"
+        icon="key"
+      >
+
+        On the same [Google Analytics website](https://analytics.google.com) page where you found your measurement-id, look below for the `API secrets for measurement protocole` page.
+
+        <img
+          style={{ borderRadius: '0.5rem' }}
+          src="/images/data-stream-config-highlight.png"
+        />
+
+        Create and copy a new `api-secret` for the Google Analytics bot.
+
+        <img
+          style={{ borderRadius: '0.5rem' }}
+          src="/images/ga-new-api-secret.png"
+        />
+
+        Paste it in the `/settings google analytics` command
+
+        <img
+          style={{ borderRadius: '0.5rem' }}
+          src="/images/ga-settings-api-secret.png"
+        />
+
+        Hit `Enter`to send the command and wait for the confirmation ✅
+
+        <img
+          style={{ borderRadius: '0.5rem' }}
+          src="/images/ga-settings-confirmation.png"
+        />
+
+
+        **Can't find your api-secret ?**  
+        Follow this step by step video to create a new `api-secret`
+
+        - Click to open the `API secrets for measurement protocole` page.
+        - Click the top right button to `read and accept the terms` (option).
+        - Click on `Create`.
+        - Type a name for your `api-secret` (exemple: 'Discord-bot')
+        - Confirm to close the drawer
+        - Copy your new `api-secret`
+
+        <video
+          style={{ borderRadius: '0.5rem' }}
+          src="/images/ga-api-secret-creation.mp4"
+        />
+
+      </Step>
+    </Steps>
+
   </Step>
   
 </Steps>
